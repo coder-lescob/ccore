@@ -1,7 +1,7 @@
 #include <ccore.h>
 
 void _start(void) {
-  char str[] = "hello, world!\n";
+  char str[] = "Hello, world!\n";
   write(1, str, sizeof(str));
-  exit(63);
+  exit(0);
 }

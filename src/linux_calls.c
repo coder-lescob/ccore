@@ -54,7 +54,7 @@ isize write(u32 fd, const char *buf, usize count) {
  * exits the program with the code code
  */
 void exit(u8 code) {
-  register u32 sys_num __asm__(SYSN) = SYS_EXIT_NUM;
+  register u32 sys_num   __asm__(SYSN) = SYS_EXIT_NUM;
   register u8  exit_code __asm__(ARG1) = code;
 
   __asm__ volatile (

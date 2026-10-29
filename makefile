@@ -27,7 +27,7 @@ TEST_TARGET := $(TEST_BUILD)/ccore_tests
 
 # -fPIC for position independent code
 # -MD and -MMD to generate depedency files
-LIB_OFLAGS := -nostdlib -fPIC -MMD -MD -I"$(LIB_HEADERS)" -I"$(SRC)"
+LIB_OFLAGS := -nostdlib -fno-builtin -fPIC -MMD -MD -I"$(LIB_HEADERS)" -I"$(SRC)"
 
 # specific flags
 DG_OFLAGS := -ggdb $(LIB_OFLAGS)
